@@ -27,7 +27,6 @@ export const Welcome = () => {
               backgroundColor: user.color,
               backgroundImage: 'url(' + user.picture.large + ')',
               backgroundRepeat: 'no-repeat',
-              backgroundSize: 'contain',
             }}
           >
             <div
