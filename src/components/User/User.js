@@ -11,5 +11,9 @@ export const User = () => {
     getUser();
   }, []);
 
-  return <div>{user?.name.first}</div>;
+  if (!user) {
+    return <div>User not found</div>;
+  }
+
+  return <div>{user.name.first}</div>;
 };
