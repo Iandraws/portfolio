@@ -1,0 +1,67 @@
+.users-wrapper {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+
+  .user-wrapper {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    margin: 16px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 22px 19px 46px black;
+    .email {
+      left: 0;
+      top: 0;
+      position: absolute;
+      background-color: yellow;
+    }
+    .name {
+      font-size: 30px;
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 16px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+    .gender {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 8px;
+
+      &.male {
+        background-color: blue;
+      }
+      &.female {
+        background-color: pink;
+      }
+    }
+
+    .age {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      padding: 8px;
+      background-color: green;
+    }
+  }
+}
+
+.selected-user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: yellow;
+  color: black;
+  z-index: 999;
+}
