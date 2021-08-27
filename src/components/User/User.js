@@ -11,7 +11,7 @@ export const User = () => {
     getUser();
   }, []);
 
-  if (user == null) {
+  if (!user) {
     return <div>User not found</div>;
   }
 
